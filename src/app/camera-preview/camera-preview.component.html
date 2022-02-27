@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>camera-preview</ion-title>
+
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+
+    
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid fixed>
+    <ion-row>
+      <ion-col size="12">
+        <ion-button (click)="takePicture()" shape="round" expand="block" color="secondary">
+         Open Camera
+        </ion-button>
+      </ion-col>
+      <ion-col size="12" >
+        <img [src]="photo" alt="">
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

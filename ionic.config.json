@@ -1,0 +1,7 @@
+{
+  "name": "micdaApp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

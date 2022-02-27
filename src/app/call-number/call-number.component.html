@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>call-number </ion-title>
+
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+
+    
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+
+  <!-- Call number  -->
+  <ion-grid fixed>
+    <ion-row>
+      <ion-col size="12">
+        <ion-input [(ngModel)]="phoneNumber" placeholder="numero 1 " type="text"></ion-input>
+      </ion-col>
+      <ion-col size="12">
+        <ion-button shape="round" expand="block" color="secondary" (click)="CallNumber()">Call</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+</ion-content>

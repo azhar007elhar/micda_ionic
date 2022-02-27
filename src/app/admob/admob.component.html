@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>admob</ion-title>
+
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid fixed>
+    <ion-row>
+      <ion-col size="12"><ion-button shape="round" expand="block" color="secondary" (click)="showBottomBanner()" >show Bottom Banner</ion-button></ion-col>
+      <!-- <ion-col size="12"><ion-button shape="round" expand="block" color="secondary" (click)="prepareInterstitial()" >prepare Interstitial</ion-button></ion-col> -->
+      <ion-col size="12"><ion-button shape="round" expand="block" color="secondary" (click)="showInterstitial()" >show Interstitial</ion-button></ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

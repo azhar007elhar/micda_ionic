@@ -1,0 +1,38 @@
+
+<ion-header>
+  <ion-toolbar>
+    <ion-title>barcode-scanner</ion-title>
+
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+<ion-grid fixed>
+  <ion-row>
+    <ion-col size="12">
+      <section>
+        <ion-button shape="round" expand="block" color="secondary" (click)="scan()">
+          <ion-icon slot="start" name="camera"></ion-icon>
+          SCAN USING THE CAMERA
+        </ion-button>
+    
+        <div *ngIf="data">
+          <p>
+            Scanned Code Text : <b>{{ data["text"] }}</b>
+          </p>
+          <p>
+            Scanned Code Format : <b>{{ data["format"] }}</b>
+          </p>
+        </div>
+    
+      </section>
+    </ion-col>
+  </ion-row>
+</ion-grid>
+
+</ion-content>

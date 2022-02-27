@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>SMS</ion-title>
+
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid fixed>
+    <ion-row>
+      <ion-col size="12">
+        <ion-item lines="none">
+          <!-- <ion-label>numero tele : </ion-label> -->
+          <ion-input [(ngModel)]="numero" placeholder="numero telephone" type="number"></ion-input>
+        </ion-item>
+      </ion-col>
+      <ion-col size="12">
+        <ion-item lines="none">
+          <!-- <ion-label>message : </ion-label> -->
+          <ion-input [(ngModel)]="message" placeholder="message" type="text"></ion-input>
+        </ion-item>
+      </ion-col>
+      <ion-col size="12">
+        <ion-button shape="round" expand="block" color="secondary" (click)="sendMessage()" >Envoyer Message</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
